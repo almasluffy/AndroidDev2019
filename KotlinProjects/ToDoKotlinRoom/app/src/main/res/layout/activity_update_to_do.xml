@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goodb"
+    tools:context=".UpdateToDo">
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="453dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="19dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/black_ops_one"
+            android:text="Update Task"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/updatedText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="task?" />
+
+        <EditText
+            android:id="@+id/updatedDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:hint="description..." />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorGreen"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight" />
+
+
+
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorRed"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="223dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@color/gold"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Done"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight"
+            android:textSize="36sp" />
+
+
+
+
+    </LinearLayout>
+    <!--    </ScrollView>-->
+</RelativeLayout>

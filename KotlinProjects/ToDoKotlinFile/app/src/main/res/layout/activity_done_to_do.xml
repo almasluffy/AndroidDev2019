@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goodb"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="427dp"
+        android:layout_height="148dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="245dp"
+            android:layout_height="53dp"
+            android:layout_marginEnd="64dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Completed Goals"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.716"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="25dp" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="102dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Clear All"
+            android:textColor="@color/colorRed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

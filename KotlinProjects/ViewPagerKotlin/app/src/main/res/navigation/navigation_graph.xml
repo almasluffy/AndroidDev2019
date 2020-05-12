@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/postFragment">
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.viewpagerkotlin.presentation.post.PostFragment"
+        android:label="Cinema"
+        tools:layout="@layout/fragment_post" >
+        <action
+            android:id="@+id/action_postListFragment_to_postDetailFragment"
+            app:destination="@id/postDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.example.viewpagerkotlin.presentation.post.detail.PostDetailFragment"
+        android:label="Movie detail"
+        tools:layout="@layout/fragment_post_detail" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.viewpagerkotlin.presentation.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

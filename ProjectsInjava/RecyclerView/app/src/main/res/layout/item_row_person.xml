@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border1"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/naruto"/>
+<!--            app:srcCompat="@drawable/naruto" />-->
+
+        <TextView
+            android:id="@+id/postName"
+            android:layout_width="148dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left"
+            android:fontFamily="sans-serif-medium"
+            android:foregroundGravity="left"
+            android:gravity="left"
+            android:padding="16dp"
+            android:text="TextView"
+            android:textSize="14sp" />
+
+    </TableRow>
+
+    <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="231dp"
+        app:srcCompat="@drawable/pain" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:text="TextView"
+        android:textSize="14sp" />
+
+</TableLayout>
